@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+}
+.hover-all{
+    padding: 10rem 0;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    width: 300px;
+
+}
+.box-top{
+    width: 100%;
+    overflow: hidden;
+    
+    
+}
+.box-top img{
+    width: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.all-box .box-top:hover img{
+    transform: scale(1.2)
+}
+.box-bottom span{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+    color: gray;
+    font-size: 20px;
+    bottom:163px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: .5s;
+}
+.all-box .box-top:hover .box-bottom span{
+    bottom: 130px;
+    opacity: 1;
+    
+    
+
+}
+
